@@ -1,6 +1,8 @@
 **Teste de Java Básico com Spring-Boot**
 
-
+**Para melhor visualização da atividade, use o postman**
+`Testes da aplicação`
+![image](https://user-images.githubusercontent.com/23249378/168937277-ea4bc0b6-2b4e-4f21-b66b-9ecb14a7cf68.png)
 Prova de avaliação dos conhecimentos básicos de linguagem Java.
 
 Para fazer a prova é necessário ter o java 11 e o maven 3.
@@ -26,7 +28,3 @@ O candidato deve ser implementar 2 desafios:
     
 Após terminar o candidato deverá versionar a prova no git hub e nos mandar o repositório. 
 * Enviar para: lhsilva@travelexbank.com.br, msales@travelexbank.com.br, rlisboa@travelexbank.com.br
-
-**Para melhor visualização da atividade, use o postman**
-`Testes da aplicação`
-![image](https://user-images.githubusercontent.com/23249378/168937277-ea4bc0b6-2b4e-4f21-b66b-9ecb14a7cf68.png)
