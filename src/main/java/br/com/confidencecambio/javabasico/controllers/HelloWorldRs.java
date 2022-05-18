@@ -1,4 +1,4 @@
-package br.com.confidencecambio.javabasico;
+package br.com.confidencecambio.javabasico.controllers;
 
 import br.com.confidencecambio.javabasico.service.HelloService;
 import org.springframework.http.HttpStatus;
