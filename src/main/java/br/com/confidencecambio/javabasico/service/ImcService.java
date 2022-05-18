@@ -1,21 +1,20 @@
 package br.com.confidencecambio.javabasico.service;
 
 import java.text.DecimalFormat;
-
+import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 
 @Component
 public class ImcService {
     private Double imc = 0.0;
 
-    public Double calculaIMC(Double peso, Double altura) {
+    public Double calculaIMC(@Nullable Double peso,@Nullable Double altura) {
         imc = peso / (Math.pow(altura, 2));
         return imc;
     }
 
     public String exibiMensagemIMC(Double imc) {
-        DecimalFormat formater = new DecimalFormat("0.00");
-        String imcFormatado = formater.format(imc).replace(",", ".");
+        String imcFormatado = retornaIMCpersonalizado(imc);
         StringBuilder mensagemIMC=new StringBuilder();
         mensagemIMC.append("O seu IMC é: ");
         mensagemIMC.append(imcFormatado);
@@ -44,4 +43,9 @@ public class ImcService {
         }
     }
 
+    public String retornaIMCpersonalizado(Double imc){
+        DecimalFormat formater = new DecimalFormat("0.00");
+        String imcFormatado = formater.format(imc).replace(",", ".");
+        return imcFormatado;
+    }
 }
